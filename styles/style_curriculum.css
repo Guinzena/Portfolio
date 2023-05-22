@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #1f1f20;
+    --secondary-color: #dce0e6;
+    --tertiary-color-light: #567ebb;  
+    --tertiary-color-dark: #2b4c7e;
+    --hover-color: #606d80;
+    --main-font: 'Roboto', sans-serif;
+}
+
+.curriculum {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 6% 16%;
+}
+
+.curriculum_content1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+
+}
+
+.curriculum_content1_infos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 46%;
+}
+
+.curriculum_content1_list {
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+    font-weight: 300;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.curriculum_content2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.curriculum_content2_skills {
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.curriculum_content2_courses {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 38%;
+}
+
+.curriculum_content2_courses_link {
+    text-decoration: none;
+    color: var(--tertiary-color-light);
+}
+
+.curriculum_content2_courses_link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+
+    .curriculum {
+        padding: 8% 6%;
+    }
+
+    .curriculum_content1 {
+        flex-direction: column-reverse;
+    }
+
+    .curriculum_content1_infos {
+        width: 100%;
+    }
+
+    .curriculum_content2 {
+        flex-direction: column;
+        gap: 40px;
+        
+    }
+
+    .curriculum_content2_skills {
+        width: 100%;
+    }
+
+    .curriculum_content2_courses {
+        width: 100%;
+    }
+
+}
